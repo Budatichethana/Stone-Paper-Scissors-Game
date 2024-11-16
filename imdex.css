@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(2, 2, 51);
+    color: rgb(210, 205, 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.btn{
+position: absolute;
+top: 30px;
+right: 200px;
+padding: 10px 20px;
+background-color: goldenrod;
+border: 1px solid black;
+border-radius: 5px;
+font-size: 1rem;
+}
+.btn:active{
+   background-color: chocolate;
+}
+.container{
+    border: 1px solid red;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.lower_section{
+    border: 1px solid red;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    
+}
+.result{
+    border: 1px solid red;
+    width: 75%;
+    height: 100%;
+    position: relative;
+}
+.top{
+    border: 1px solid red;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px;
+}
+.top p{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.draw_para{
+    display: flex;
+    flex-direction: column;
+    font-size: 1px;
+}
+
+.left_para{
+    border: 1px solid red;
+    
+}
+.right_para{
+    border: 1px solid red;
+
+}
+
+.middle{
+    border: 1px solid red;
+    width: 100%;
+    height: calc(100% - 150px);
+    display: flex;
+    color: black;
+
+}
+.right_side{
+    background-image: url(RightStone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.right{
+    background-image: url(RightStone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: right 0.6s infinite ease-in-out;
+}
+@keyframes right{
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(20deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    75% {
+        transform: rotateZ(-20deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+.left_side{
+    background-image: url(LeftStone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.left{
+    background-image: url(LeftStone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: left 0.6s infinite ease-in-out;
+}
+@keyframes left{
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(-20deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    75% {
+        transform: rotateZ(20deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+
+.middle div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.answer{
+    border: 1px solid red;
+    width: 100%;
+    height: 80px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+
+.choose{
+    border: 1px solid red;
+    width: 25%;
+    height: 100%;
+}
+.choose div{
+    border: 1px solid red;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.choose div img{
+    width: 50%;
+    height: 100%;
+}
+.choose div p{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.choose h3{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.RightStone{
+    background-image: url(RightStone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.RightPaper{
+    background-image: url(RightPap.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.RightSCi{
+    background-image: url(RigSC.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.leftStone{
+    background-image: url(LeftStone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.leftPaper{
+    background-image: url(leftPap.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.leftSci{
+    background-image: url(LeftSC.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}

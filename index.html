@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="imdex.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <button class="btn" onclick="Restart()">Restart</button>
+        <div class="container">
+            <h2>Game Start</h2>
+            <h2>Total game:-  <span class="total">0</span></h2>
+            <div class="lower_section">
+                <div class="result">
+                    <div class="top">
+                        <p class="left_para">0</p>
+                        <p class="draw_para">
+                            <span>DRAW</span>
+                        <span class="draw">0</span>
+                        </p>
+                        <p class="right_para">0</p>
+                    </div>
+
+                    <div class="middle">
+                        <div class="left_side">
+                            <h3>Computer</h3>
+                        </div>
+                        <div class="right_side ">
+                            <h3>YOU</h3>
+                        </div>
+                    </div>
+                    <div class="answer">.......</div>
+                </div>
+                <div class="choose">
+                    <div class="stone" onclick="stoneFun()"><img src="Rock-removebg-preview.png" alt="">
+                        <p>Stone</p>
+                    </div>
+                    <div class="paper" onclick="paperFun()"><img src="Paper-removebg-preview.png" alt="">
+                        <p>Paper</p>
+                    </div>
+                    <div class="scissor" onclick="SciFun()"><img src="Scesior-removebg-preview.png" alt="">
+                        <p>Scissor</p>
+                    </div>
+                    <h3>Choose Here</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
